@@ -8,7 +8,9 @@ def encode(password):
 
     return encoded_password
 
-# TODO: add function to decode the password
+
+def decode(password):
+    return ''.join(str(int(c)-3 % 10) for c in password)
 
 
 # Main function to interact with the user
