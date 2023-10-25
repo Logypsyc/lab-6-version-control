@@ -11,7 +11,7 @@ def encode(password):
 
 # Added by Connor Kress
 def decode(password):
-    return ''.join(str(int(c)-3 % 10) for c in password)
+    return ''.join(str((int(c)-3) % 10) for c in password)
 
 
 # Main function to interact with the user
@@ -25,8 +25,8 @@ def main():
                 encoded_password = encode(password)  # Encode the password
                 print("Your password has been encoded and stored!")
             case 2:
-                print(f'The encoded password is {password}, and the '
-                      f'original password is {decode(password)}.')
+                print(f'The encoded password is {encoded_password}, and the '
+                      f'original password is {decode(encoded_password)}.')
             case 3:
                 exit()  # Exit the program
 
