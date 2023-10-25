@@ -9,6 +9,7 @@ def encode(password):
     return encoded_password
 
 
+# Added by Connor Kress
 def decode(password):
     return ''.join(str(int(c)-3 % 10) for c in password)
 
