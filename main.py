@@ -25,8 +25,8 @@ def main():
                 encoded_password = encode(password)  # Encode the password
                 print("Your password has been encoded and stored!")
             case 2:
-                pass
-                # TODO: implement decoding of the password
+                print(f'The encoded password is {password}, and the '
+                      f'original password is {decode(password)}.')
             case 3:
                 exit()  # Exit the program
 
